@@ -9,11 +9,11 @@ int main(void)
 	int i;
 
 	/* display all single digit numbers of base 10 using putchar */
-	for (i = 0; i < 10; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(i % 10 + '0');
+		putchar(i);
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
 
