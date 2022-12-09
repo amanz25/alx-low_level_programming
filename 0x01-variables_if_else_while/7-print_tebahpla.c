@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	char i;
+	int i;
 
 	/* display all lower case alphabets in reverse order */
-	for (i = 'z'; i >= 'a'; i--)
+	for (i = 122; i >= 97; i--)
 	{
 		putchar(i);
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
 
