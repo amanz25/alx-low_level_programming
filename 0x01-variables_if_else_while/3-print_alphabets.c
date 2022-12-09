@@ -1,18 +1,21 @@
 #include <stdio.h>
-/* more headers goes there */
- 
-/* betty style doc for function main goes there */
+/**
+ * main -Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char i;
 	char j;
+
 	/* display all lower case alphabets */
-	for (i = 'a';i <= 'z';i++)
+	for (i = 'a' ; i <= 'z'; i++)
 	{
 		putchar(i);
 	}
 	/* followed by all upper case alphabets */
-	for (j = 'A';j <= 'Z';j++)
+	for (j = 'A'; j <= 'Z'; j++)
 	{
 		putchar(j);
 	}

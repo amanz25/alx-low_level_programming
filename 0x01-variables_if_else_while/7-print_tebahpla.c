@@ -1,12 +1,15 @@
 #include <stdio.h>
-/* more headers goes there */
- 
-/* betty style doc for function main goes there */
+/**
+ * main -Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char i;
+
 	/* display all lower case alphabets in reverse order */
-	for (i = 'z';i >= 'a';i--)
+	for (i = 'z'; i >= 'a'; i--)
 	{
 		putchar(i);
 	}
