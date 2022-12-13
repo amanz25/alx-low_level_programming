@@ -2,9 +2,9 @@
 
 /**
  * main - program that prints the alphabet, in lowercase, followed by a new line
- * Return: Always 0 (Success)
+ * Return: void (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	char alphabet;
 
@@ -14,6 +14,5 @@ int main(void)
 	}
 
 	_putchar('\n');
-	return (0);
 
 }
