@@ -2,18 +2,15 @@
 
 /**
  * _islower - program that checks for lowercase character
+ * @c: character to be tested
  * Return: Always void (Success)
  */
 int _islower(int c)
 {
-	int i;
 
-	for (i = 97; i <= 122; i++)
-	{
-		if(i == c)
-			_putchar(49);
-		else
-			_putchar(48);
-	}
+	if (c >= 97 && c <= 122)
+		_putchar(1);
+	else
+		_putchar(0);
 
 }
