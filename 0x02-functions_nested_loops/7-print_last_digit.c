@@ -7,10 +7,15 @@
  */
 int print_last_digit(int n)
 {
+	int reminder;
 
 	if (n >= 0)
-		return (n % 10);
+		reminder = (n % 10);
 	else
-		return ((-1 * n) % 10);
+		reminder = ((-1 * n) % 10);
+
+	_putchar(reminder + '0');
+
+	return (reminder);
 
 }
