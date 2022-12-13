@@ -8,12 +8,21 @@ void times_table(void)
 {
 	int row;
 	int col;
+	int product;
 
 	for (row = 0; row <= 9; row++)
 	{
 		for (col = 0; col <= 9; col++)
 		{
-			_putchar((row * col) + '0');
+			product = row * col;
+			if (product < 10)
+				_putchar(product + '0');
+			else
+			{
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
+			}
+
 			if (col != 9)
 			{
 				_putchar(',');
