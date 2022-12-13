@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int i;
+	int count = 1;
 	unsigned long num;
 	unsigned long prevNum;
 	unsigned long a;
@@ -16,7 +16,7 @@ int main(void)
 
 	while (num < 4000000)
 	{
-		if (i == 1)
+		if (count == 1)
 		{
 			num = 1;
 			prevNum = 1;
@@ -30,6 +30,8 @@ int main(void)
 
 		if (num % 2 == 0)
 			sum += num;
+
+		count++;
 	}
 
 	printf("%lu\n", sum);
