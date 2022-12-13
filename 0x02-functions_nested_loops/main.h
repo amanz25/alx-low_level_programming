@@ -4,7 +4,7 @@
 /*
  * File: main.h
  *
- * Desc: Header file containing declartions for all function
+ * Desc: Header file containing declartions for functions
  */
 
 int _putchar(char c);
