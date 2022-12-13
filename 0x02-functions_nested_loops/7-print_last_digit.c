@@ -9,10 +9,11 @@ int print_last_digit(int n)
 {
 	int reminder;
 
-	if (n >= 0)
-		reminder = (n % 10);
-	else
-		reminder = ((-1 * n) % 10);
+	if (n < 0)
+		n = -n;
+	reminder = n % 10;
+	if (reminder < 0)
+		reminder = -reminder;
 
 	_putchar(reminder + '0');
 
