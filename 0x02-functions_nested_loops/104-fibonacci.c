@@ -9,9 +9,9 @@
 int main(void)
 {
 	int i;
-	long long num;
-	long long prevNum;
-	long long a;
+	unsigned long num;
+	unsigned long prevNum;
+	unsigned long a;
 
 	for (i = 1; i <= 98; i++)
 	{
@@ -27,10 +27,10 @@ int main(void)
 			prevNum = a;
 		}
 
-		if (i == 50)
-			printf("%llu", num);
+		if (i == 98)
+			printf("%lu", num);
 		else
-			printf("%llu, ", num);
+			printf("%lu, ", num);
 	}
 
 	printf("\n");
