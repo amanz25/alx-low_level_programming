@@ -1,4 +1,6 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
  * print_triangle - prints a triangle, followed by a new line
  *
@@ -17,7 +19,7 @@ void print_triangle(int size)
 			for (j = size; j >= 1; j--)
 			{
 				if (i >= j)
-					_putchar('#');
+					_putchar(35);
 				else
 					_putchar(' ');
 			}
