@@ -1,12 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-
-int _isupper(int c);
-int _isdigit(int c);
-int mul(int a, int b);
-void print_numbers(void);
-int _putchar(char c);
+extern int _putchar(char c);
+extern int _isupper(int c);
+extern int _isdigit(int c);
+extern int mul(int a, int b);
+extern void print_numbers(void);
 
 #endif /* MAIN_H */
