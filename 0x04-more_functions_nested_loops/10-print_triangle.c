@@ -17,7 +17,7 @@ void print_triangle(int size)
 			for (j = size; j >= 1; j--)
 			{
 				if (i >= j)
-					_putchar(35);
+					_putchar('#');
 				else
 					_putchar(' ');
 			}
