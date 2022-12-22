@@ -8,21 +8,23 @@
 
 char *rot13(char *str)
 {
-	int i;
+	int i, k;
+
+	char first[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char second[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		while ((str[i] >= 'a' && str[i] <= 'z') ||
-		(str[i] >= 'A' && str[i] <= 'Z'))
+		k = 0;
+		while (first[k] != '\0')
 		{
-		if ((str[i] >= 'a' && str[i] <= 'm') ||
-		(str[i] >= 'A' && str[i] <= 'M'))
-			str[i] = str[i] + 13;
-		else
-			str[i] = str[i] - 13;
-
-		i++;
+			if (str[i] == first[k])
+			{
+				str[i] = second[k];
+				break;
+			}
+			k++;
 		}
 
 		i++;
