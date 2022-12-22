@@ -22,7 +22,7 @@ char *rot13(char *str)
 		else
 			str[i] = str[i] - 13;
 
-		break;
+		i++;
 		}
 
 		i++;
