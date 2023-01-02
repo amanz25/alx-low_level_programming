@@ -10,17 +10,30 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int k;
+	unsigned int isFound;
+	char *swap = accept;
 
-	k = 1;
+	k = 0;
 	while (*s != '\0')
 	{
-		if (*s == accept[0])
-			return (k);
+		isFound = 0;
+		while (*accept != '\0')
+		{
+			if (*s == *accept)
+			{
+				isFound = 1;
+				break;
+			}
+			accept++;
+		}
 
-		s += 1;
-		k++;
+		if (isFound == 0)
+			k++;
+		accept = swap;
+
+		s++;
 	}
 
-	return (0);
+	return (k);
 
 }
