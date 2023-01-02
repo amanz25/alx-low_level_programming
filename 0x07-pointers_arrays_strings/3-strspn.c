@@ -27,8 +27,10 @@ unsigned int _strspn(char *s, char *accept)
 			accept++;
 		}
 
-		if (isFound == 0)
+		if (isFound == 1)
 			k++;
+		else
+			break;
 		accept = swap;
 
 		s++;
