@@ -7,17 +7,31 @@
  * Return: square root of number n.
  */
 
+
 int _sqrt_recursion(int n)
 {
-	int i = 1;
+	if (n == 0)
+		return (0);
 
-	if (n < 0)
-		return (-1);
-	if ((i * i)  == n)
-		return (i);
-	if ((i * i) > n)
+	return (_sqrt(1, n));
+}
+
+/**
+ * _sqrt - return square root by guessing
+ * @guessNumber: guess number by squaring
+ * @num: given num to be square root
+ *
+ * Return: square root of num or -1
+ */
+
+int _sqrt(int guessNumber, int num)
+{
+	if ((guessNumber * guessNumber) == num)
+		return (guessNumber);
+	if ((guessNumber * guessNumber) > num)
 		return (-1);
 
-	return (_sqrt_recursion(n, i + 1));
+	return (_sqrt(guessNumber + 1, num));
 
 }
+
