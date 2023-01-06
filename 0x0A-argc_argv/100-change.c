@@ -27,7 +27,8 @@ int main(int argc, char *argv[])
 
 		if (val < 0)
 			printf("0\n");
-
+		else
+		{
 		while (val)
 		{
 			count++;
@@ -44,7 +45,7 @@ int main(int argc, char *argv[])
 		}
 
 		printf("%d\n", count);
+		}
 	}
-
 	return (0);
 }
