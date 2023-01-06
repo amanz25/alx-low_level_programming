@@ -17,7 +17,10 @@ int main(int argc, char *argv[])
 	int val;
 
 	if (argc != 2)
+	{
 		printf("Error\n");
+		return (1);
+	}
 	else
 	{
 		val = atoi(argv[1]);
