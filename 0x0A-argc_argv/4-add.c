@@ -21,10 +21,11 @@ int main(int argc, char *argv[])
 	int strLength;
 
 	if (argc < 2)
-		return ("0\n");
-
-	for (i = 1; i < argc; i++)
+		printf("0\n");
+	else
 	{
+		for (i = 1; i < argc; i++)
+		{
 		position = argv[i];
 		strLength = strlen(position);
 
@@ -39,8 +40,8 @@ int main(int argc, char *argv[])
 			k++;
 		}
 		sum += atoi(argv[i]);
+		}
 	}
-
 	printf("%d\n", sum);
 
 	return (0);
