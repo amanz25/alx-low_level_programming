@@ -6,7 +6,7 @@
  * @size: size of character
  * @c: character to be initialized
  *
- * Return: pointer to a character.
+ * Return: pointer to a string.
  */
 
 char *create_array(unsigned int size, char c)
