@@ -15,31 +15,37 @@ void print_all(const char * const format, ...)
 	va_start(list, format);
 	while (format && format[j] != '\0')
 	{
-		if (format[j] == 'c' || format[j] == 'i' || format[j] == 'f'
-		|| format[j] == 's')
-		{
-			if (start == 1)
-				printf(", ");
+		switch (format[j])
+		{ case 'c':
+			switch (start)
+			{ case 1: printf(", "); }
 			start = 1;
-		}
-
-		if (format[j] == 'c')
 			printf("%c", va_arg(list, int));
-		else if (format[j] == 'i')
+			break;
+			case 'i':
+			switch (start)
+			{ case 1: printf(", "); }
+			start = 1;
 			printf("%i", va_arg(list, int));
-		else if (format[j] == 'f')
+			break;
+		case 'f':
+			switch (start)
+			{ case 1: printf(", "); }
+			start = 1;
 			printf("%f", va_arg(list, double));
-		else if (format[j] == 's')
-		{
+			break;
+		case's':
+			switch (start)
+			{ case 1: printf(", "); }
+			start = 1;
 			p = va_arg(list, char*);
 			if (p)
-			{
-				printf("%s", p);
-				break;
-			}
+			{ printf("%s", p);
+			break; }
 			printf("%p", p);
-		}
-		j++; }
+			break; }
+		j++;
+	}
 	printf("\n");
 	va_end(list);
 }
