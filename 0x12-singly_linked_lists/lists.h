@@ -15,5 +15,6 @@ size_t print_list(const list_t *h);
 int _putchar(char c);
 void print_num(int num);
 void print_string(char *s);
+size_t list_len(const list_t *h);
 
 #endif
