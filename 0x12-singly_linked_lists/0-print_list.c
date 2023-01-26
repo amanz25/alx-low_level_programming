@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		if(h->str == NULL)
+		if (h->str == NULL)
 			print_string("[0] (nil)");
 		else
 		{
@@ -46,7 +46,7 @@ void print_num(int num)
 		num = -1 * num;
 	}
 
-	if(num / 10)
+	if (num / 10)
 		print_num(num / 10);
 
 	_putchar('0' + (num % 10));
@@ -62,7 +62,7 @@ void print_string(char *s)
 {
 	int i;
 
-	for(i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
 }
 

@@ -2,6 +2,12 @@
 #define LISTS_H
 
 typedef struct list_t *nodeptr;
+/**
+ * struct list_t - structure for linked list
+ * @str: string
+ * @len: length of the string
+ * @next: pointer to the next linked list
+ */
 typedef struct list_t
 {
 	char *str;
