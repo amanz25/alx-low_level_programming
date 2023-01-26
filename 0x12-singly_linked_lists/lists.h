@@ -1,6 +1,10 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+
 typedef struct list_t *nodeptr;
 /**
  * struct list_t - structure for linked list
