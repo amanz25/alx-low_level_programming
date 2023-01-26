@@ -26,7 +26,8 @@ int _putchar(char c);
 void print_num(int num);
 void print_string(char *s);
 size_t list_len(const list_t *h);
-list_t *add_node(list_t **head, char *str);
-int string_len(char *s);
+list_t *add_node(list_t **head, const char *str);
+int string_len(const char *s);
+list_t *add_node_end(list_t **head, const char *str);
 
 #endif
