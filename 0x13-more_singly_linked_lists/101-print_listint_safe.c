@@ -9,13 +9,8 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t count;
-	const listint_t *temp;
 
 	count = 0;
-	if(head == NULL)
-		return (0);
-
-	temp = head;
 	while (head != NULL)
 	{
 		count++;
@@ -28,9 +23,6 @@ size_t print_listint_safe(const listint_t *head)
 		else
 			head = head->next;
 	}
-
-	if (temp != NULL && count == 0)
-		exit (98);
 
 	return (count);
 }
