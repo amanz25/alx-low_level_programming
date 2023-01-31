@@ -8,17 +8,26 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
+	listint_t *s = head;
+	listint_t *f = head;
+
 	if (head == NULL)
 		return (NULL);
 
-	while (head != NULL)
+	while (s != NULL && f != NULL && f->next  != NULL)
 	{
-		if (head <= head->next)
+		f = f->next->next;
+		s = s->next;
+		if (f == s)
 		{
-			return (head->next);
+			s = head;
+			while (s != f)
+			{
+				s = s->next;
+				f = f->next;
+			}
+			return (f);
 		}
-		else
-			head = head->next;
 	}
 
 	return (NULL);
