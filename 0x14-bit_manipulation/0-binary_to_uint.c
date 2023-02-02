@@ -7,7 +7,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum, square, num;
+	unsigned int sum, square;
 	int k, j, count;
 
 	count = 0;
@@ -25,11 +25,7 @@ unsigned int binary_to_uint(const char *b)
 		for (j = 0; j < (count - k); j++)
 			square *= 2;
 
-		if (b[k - 1] == '0')
-			num = 0;
-		else if (b[k - 1] == '1')
-			num = 1;
-		sum += (square * num);
+		sum += (square * (b[k - 1] - '0'));
 	}
 
 	return (sum);
