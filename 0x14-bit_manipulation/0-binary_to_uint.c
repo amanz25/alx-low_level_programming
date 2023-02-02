@@ -10,6 +10,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int sum, square, num;
 	int k, j, count;
 
+	if (b == NULL)
+		return (0);
 	count = 0;
 	while (b[count] != '\0')
 	{
