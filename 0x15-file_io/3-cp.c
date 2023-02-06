@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int x, m, n, fd_r, fd_w;
-	char buf[1024];
+	char buf[BUFSIZ];
 
 	if (argc != 3)
 	{
