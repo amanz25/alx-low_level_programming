@@ -3,7 +3,7 @@
 /**
  * delete_dnodeint_at_index - function that deletes the node at index index
  * @head: pointer to the list head
- * @idx: index where the node to be deleted
+ * @index: index where the node to be deleted
  *
  * Return: 1 (Success) or -1 (fail)
  */
