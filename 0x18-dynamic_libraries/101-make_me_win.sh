@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P .. https://github.com/Karenahv/holbertonschool-low_level_programming/raw/master/0x18-dynamic_libraries/injectcode.so
-export LD_PRELOAD=/tmp/injectcode.so
+wget -P .. https://github.com/amanz25/0x18.c/blob/master/libmy.so
+export LD_PRELOAD=/tmp/libmy.so
